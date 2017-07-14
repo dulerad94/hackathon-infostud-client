@@ -1,0 +1,23 @@
+@import 'font-family';
+@import 'color';
+@import 'mixin';
+@import 'function';
+
+body {
+	font: $font-size $font-stack
+}
+
+html,
+body {
+	overflow-x: hidden;
+	text-rendering: optimizeLegibility
+}
+
+img {
+	max-width: 100%;
+	vertical-align: middle
+}
+
+p {
+	line-height: 145%
+}

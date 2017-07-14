@@ -1,0 +1,347 @@
+/* 
+* #Form
+*/
+
+.form-input {
+  display: block;
+  height: 34px;
+  margin-bottom: 20px;
+  padding: 6px 12px;
+  font-size: 15px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+.form-input-textarea {
+  display: block;
+  resize:none;
+  height:100px;
+  width:400px;
+  margin-bottom: 20px;
+  padding: 6px 12px;
+  font-size: 15px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+.form-input-inline {
+  height: 34px;
+  margin-bottom: 20px;
+  padding: 6px 12px;
+  font-size: 15px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, .075);
+  -webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+}
+
+.form-input-full {
+  width: 100%;
+}
+
+.form-input-third {
+  width: 33%;
+}
+
+.form-input-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.login-form {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.input-labels {
+  color: $color-primary;
+  margin-bottom: 5px;
+  margin-top: 5px;
+}
+
+
+/*
+* #Icons
+*/
+
+.icon {
+  font-size: 32px;
+  color: $color-primary;
+}
+
+.action-controls {
+  display: inline-block;
+  margin-top: 30px;
+}
+
+.icon-action-edit,
+.icon-action-add,
+.icon-action-delete {
+  font-size: 32px;
+  color: $color-primary;
+}
+
+.icon-action-edit-light,
+.icon-action-add-light,
+.icon-action-delete-light {
+  font-size: 32px;
+  color: $color-white;
+}
+
+.actions-resources {
+  overflow-y: hidden;
+}
+
+.controls-offers {
+  float: right;
+  padding-right: 25px;
+  i {
+    margin-right: 8px;
+  }
+}
+
+.controls-resources {
+  width: 60%;
+  margin-left: 20%;
+  text-align: center;
+  i {
+    margin-right: 8px;
+  }
+}
+
+.controls-forums {
+  float: right;
+  padding-right: 15px;
+  i {
+    margin-right: 8px;
+  }
+}
+
+.controls-home {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 20px;
+  i {
+    margin-right: 5px;
+  }
+}
+
+.controls-news {
+  i {
+    margin-right: 5px;
+  }
+}
+
+.controls-gallery {
+  i {
+    margin-right: 5px;
+  }
+}
+
+
+/*
+* #Add event form
+*/
+
+.add-event {
+  text-align: center;
+  .input-labels {
+    display: inline-block;
+  }
+}
+
+.page-header {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: $color-greenaccent;
+}
+
+
+/*
+* #Forum forms
+*/
+
+.form-input-search {
+  width: 70%;
+  margin-left: 15%;
+}
+
+.forum-search-icon {
+  position: absolute;
+  color: $color-grey;
+}
+
+@media screen and (max-width:1200px) {
+  .forum-search-icon {
+    position: absolute;
+    top: 8px;
+    right: 80px;
+    font-size: 20px;
+    color: $color-grey;
+  }
+}
+
+.radio-holder {
+  text-align: left;
+}
+
+.radio,
+.checkbox {
+  position: relative;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.radio label,
+.checkbox label {
+  min-height: 20px;
+  padding-left: 20px;
+  margin-bottom: 0;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.radio input[type="radio"],
+.radio-inline input[type="radio"],
+.checkbox input[type="checkbox"],
+.checkbox-inline input[type="checkbox"] {
+  position: absolute;
+  margin-top: 4px \9;
+  margin-left: -20px;
+}
+
+.radio+.radio,
+.checkbox+.checkbox {
+  margin-top: -5px;
+}
+
+.radio-inline,
+.checkbox-inline {
+  position: relative;
+  display: inline-block;
+  padding-left: 20px;
+  margin-bottom: 0;
+  font-weight: normal;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.radio-inline+.radio-inline,
+.checkbox-inline+.checkbox-inline {
+  margin-top: 0;
+  margin-left: 10px;
+}
+
+input[type="radio"][disabled],
+input[type="checkbox"][disabled],
+input[type="radio"].disabled,
+input[type="checkbox"].disabled,
+fieldset[disabled] input[type="radio"],
+fieldset[disabled] input[type="checkbox"] {
+  cursor: not-allowed;
+}
+
+.radio-inline.disabled,
+.checkbox-inline.disabled,
+fieldset[disabled] .radio-inline,
+fieldset[disabled] .checkbox-inline {
+  cursor: not-allowed;
+}
+
+.radio.disabled label,
+.checkbox.disabled label,
+fieldset[disabled] .radio label,
+fieldset[disabled] .checkbox label {
+  cursor: not-allowed;
+}
+.radio-block {
+  display:block;
+}
+.label {
+  display:inline-block;
+  margin-top:15px;
+  margin-bottom:10px;
+}
+.forms-title {
+  margin-bottom:10px;
+  margin-top:15px;
+  font-weight:600;
+}
+input[type="radio"] {
+  margin-bottom:10px;
+}
+.redstar {
+  color:red;
+}
+.table-form-row {
+  display:block;
+  margin-bottom:20px;
+}
+.forms {
+  .label {
+  display:inline-block;
+  margin-top:15px;
+  margin-bottom:10px;
+  font-weight:600;
+}
+}
+
+/*
+* TinyCME
+*/
+.form-tinycme {
+  max-width:765px;
+  margin-left:auto;
+  margin-right:auto;
+  .btn-submit {
+    margin-top:20px;
+  }
+}
+
+.single-upload {
+  margin-bottom:20px;
+}
+.forms-all-body {
+  margin-top:20px;
+}
+.opencall-upload {
+  display:block;
+  text-align:center;
+  width:250px;
+  margin-left:auto;
+  margin-right:auto;
+  margin-bottom:30px;
+}
+.gallery-album-caption-edit {
+  margin-top:20px;
+}
+.resources-add-document {
+  margin-right:5px;
+  margin-top:20px;
+}
