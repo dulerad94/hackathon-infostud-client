@@ -9,7 +9,7 @@ angular.module('app.route', [])
               templateUrl:'./views/login.html',
               controller:'LoginController'
           })
-          .when('/signUp',{
+          .when('/sign-up/:type',{
               templateUrl:'./views/signup.html',
               controller:'SignUpController'
           })
