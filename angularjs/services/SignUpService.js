@@ -5,14 +5,14 @@ angular.module('app.service.signup', [])
         var service = {};
         service.signUpUser=function (username,password) {
             var data={
-                username:username,
+                email:username,
                 password:password
             };
-            return $http.post(domain+'signupUser',data);
+            return $http.post(domain+'signupUser?XDEBUG_SESSION_START=11715',data);
         };
         service.signUpCompany=function (username,password) {
             var data={
-                username:username,
+                email:username,
                 password:password
             };
             return $http.post(domain+'signupCompany',data);
