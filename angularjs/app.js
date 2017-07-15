@@ -24,4 +24,4 @@ angular.module('app', [
   // Dependicies
 
 
-]).constant('domain', 'http://192.168.30.139:80/hackathon-api/public/');
+]).constant('domain', 'http://localhost/hackathon-api/public/');

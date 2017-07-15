@@ -1,7 +1,7 @@
 angular.module('app.route', [])
   .config(['$routeProvider', function ($routeProvider) {
       $routeProvider
-          .when('/home/:id',{
+          .when('/home/:page',{
               templateUrl:'./views/home.html',
               controller:'HomeController'
           })
