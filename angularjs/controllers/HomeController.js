@@ -2,6 +2,11 @@ angular.module('app.controller.home', [])
 
     .controller('HomeController', ['$scope','$location','$window','JobService','$routeParams',
         function ($scope,$location,$window,JobService,$routeParams) {
+          // jQuery(function($)) {
+          //   $(document).ready(function (){
+          //       $(".button-collapse").sideNav();
+          //   });
+          // });
             // $scope.page=parseInt($routeParams.page);
             // $scope.search=($window.localStorage.jobSearch===null || $window.localStorage.jobSearch==="undefined")?"":$window.localStorage.jobSearch;
             // $scope.first=$scope.page>2;
