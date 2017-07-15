@@ -1,3 +1,4 @@
+@import url(angular-min.css);
 /*!
  * Materialize v0.99.0 (http://materializecss.com)
  * Copyright 2014-2017 Materialize
@@ -6629,9 +6630,15 @@ section {
 .u-center {
   text-align: center; }
 
+.md-chip-remove {
+  width: 25px; }
+
 .job-body {
   padding-top: 50px;
   padding-bottom: 50px; }
 
 .job-body li {
   margin-bottom: 15px; }
+
+.btn-send {
+  margin-left: 33.333%; }
