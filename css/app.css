@@ -6644,13 +6644,19 @@ section {
   margin-left: 33.333%; }
 
 .blue-light {
-  background-color: #3F51B5 !important; }
+  background-color: #FFE66D !important; }
 
 .card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating) {
   color: #fff; }
   .card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating):hover {
     opacity: 0.8;
     color: #fff; }
+
+.card .card-content p {
+  color: #444; }
+
+.card .card-content .card-title {
+  color: #444; }
 
 nav {
   background-color: #3F51B5; }

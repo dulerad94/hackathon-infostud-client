@@ -13,7 +13,7 @@
 
 //cards 
 .blue-light {
-  background-color:$color-primary !important;
+  background-color:#FFE66D !important;
 }
 .card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating) {
   color:$color-white;
@@ -21,4 +21,10 @@
     opacity:0.8;
     color:$color-white;
   }
+}
+.card .card-content p {
+  color:$color-textdark;
+}
+.card .card-content .card-title {
+  color:$color-textdark;
 }
