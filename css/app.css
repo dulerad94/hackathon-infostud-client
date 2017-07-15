@@ -6642,3 +6642,18 @@ section {
 
 .btn-send {
   margin-left: 33.333%; }
+
+.blue-light {
+  background-color: #3F51B5 !important; }
+
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating) {
+  color: #fff; }
+  .card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating):hover {
+    opacity: 0.8;
+    color: #fff; }
+
+nav {
+  background-color: #3F51B5; }
+
+.page-footer {
+  background-color: #3F51B5; }
