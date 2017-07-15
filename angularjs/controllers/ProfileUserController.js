@@ -1,17 +1,12 @@
 angular
-  .module("app.controller.profileuser", ['ui.materialize'])
+  .module("app.controller.profileuser", ['ngMaterial'])
   .controller("ProfileUserController", [
     "$scope",
     "$location",
     "$window",
     function($scope, $location, $window) {
-      $scope.chips = [{
-        tag: 'Apple',
-    }, {
-        tag: 'Microsoft',
-    },{
-        tag: 'Google',
-    }];
+            $scope.chips=[];
+
 
     }
   ]);

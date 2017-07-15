@@ -2,7 +2,6 @@ angular.module('app', [
   'ngRoute',
   'ngStorage',
   'ngSanitize',
-  'ui.materialize',
 
   //route
   'app.route',
