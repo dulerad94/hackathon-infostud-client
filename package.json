@@ -5,6 +5,7 @@
   "main": "gulpfile.js",
   "dependencies": {
     "angular-file-upload": "^2.5.0",
+    "angular-materialize": "^0.2.2",
     "angular-sanitize": "^1.6.4",
     "angular-ui-tinymce": "0.0.18",
     "browser-sync": "^2.18.2",
