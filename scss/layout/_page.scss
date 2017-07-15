@@ -10,3 +10,15 @@
 .btn-send {
   margin-left:33.333%;
 }
+
+//cards 
+.blue-light {
+  background-color:$color-primary !important;
+}
+.card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating) {
+  color:$color-white;
+  &:hover {
+    opacity:0.8;
+    color:$color-white;
+  }
+}
