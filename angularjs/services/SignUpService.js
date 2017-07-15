@@ -8,8 +8,7 @@ angular.module('app.service.signup', [])
                 email:username,
                 password:password
             };
-            var a=$http.post(domain+'signupUser',data);
-            return a;
+            return $http.post(domain+'signupUser',data);
         };
         service.signUpCompany=function (username,password) {
             var data={
