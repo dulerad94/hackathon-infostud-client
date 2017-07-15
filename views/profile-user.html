@@ -1,28 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <link rel="stylesheet" href="css/app.css">
-</head>
-
-<body>
-  <nav>
-    <div class="nav-wrapper">
-      <div class="container">
-        <a href="#" class="brand-logo">Logo</a>
-        <ul id="nav-mobile" class="right hide-on-med-and-down">
-          <li><a href="sass.html">Sass</a></li>
-          <li><a href="badges.html">Components</a></li>
-          <li><a href="collapsible.html">JavaScript</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
-  <section class="profile-company">
+<div ng-include="'includes/header.html'">
+</div>
+<section class="profile-user">
     <div class="container">
       <div class="row">
         <form action="">
@@ -74,11 +52,10 @@
 
           <h3 class="col s4 offset-s4">Skills</h3>
           
-          <div class="Skills col s4 offset-s4">
-            <div class="chip ">
-              Skill
-              <i class="close material-icons">close</i>
-            </div>
+          <div class="skills col s4 offset-s4">
+            <div>
+    <div chips ng-model="chips" secondary-placeholder="secondary placeholder" placeholder="primary placeholder"></div>
+</div>
           </div>
 
           <div class="input-field col s4 offset-s4">
@@ -105,11 +82,3 @@
     <!--container-->
 
   </section>
-  <script>
-  $(document).ready(function() {
-    $('select').material_select();
-  });
-</script>
-</body>
-
-</html>

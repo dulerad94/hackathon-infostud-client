@@ -10,6 +10,7 @@
     "angular-ui-tinymce": "0.0.18",
     "browser-sync": "^2.18.2",
     "dropzone": "^4.3.0",
+    "materialize-css": "^0.99.0",
     "moment": "^2.18.1",
     "moment-timezone": "^0.5.13",
     "ng-file-upload": "^12.2.13",
