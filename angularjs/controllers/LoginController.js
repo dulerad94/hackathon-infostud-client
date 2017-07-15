@@ -7,7 +7,9 @@ angular.module('app.controller.login', [])
             $scope.submit=function () {
                 if($routeParams.type="user"){
                     LoginService.userLogin($scope.username,$scope.password).then(function (res) {
-
+                        if(res.data.success!=="true") return;
+                        $window.sessionStorage.userID=res.data.user.user_id;
+                        location.path="#!/home/1";
                     });
                 }
                 else {

@@ -4,14 +4,14 @@ angular.module('app.controller.signup', [])
         function ($scope,$location,$window,SignUpService,$routeParams) {
 
             $scope.submit=function () {
-                if($routeParams.type="user"){
-                    LoginService.userLogin($scope.username,$scope.password).then(function (res) {
-
+                if($routeParams.type==="user"){
+                    SignUpService.signUpUser($scope.username,$scope.password).then(function (res) {
+                        if(res.data.success!=="true") return;
                     });
                 }
                 else {
-                    LoginService.userCompany($scope.username,$scope.password).then(function (res) {
-
+                    SignUpService.signUpCompany($scope.username,$scope.password).then(function (res) {
+                        if(res.data.success!=="true") return;
                     });
                 }
             }

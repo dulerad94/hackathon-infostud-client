@@ -8,14 +8,14 @@ angular.module('app.service.signup', [])
                 username:username,
                 password:password
             };
-            return $http.post(domain+'',data);
+            return $http.post(domain+'signupUser',data);
         };
-        service.SignUpCompany=function (username,password) {
+        service.signUpCompany=function (username,password) {
             var data={
                 username:username,
                 password:password
             };
-            return $http.post(domain+'',data);
+            return $http.post(domain+'signupCompany',data);
         };
         return service;
     }]);
