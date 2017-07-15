@@ -6,27 +6,27 @@ angular.module('app.route', [])
               controller:'HomeController'
           })
           .when('/login/:type',{
-              templateUrl:'login.html',
+              templateUrl:'./views/login.html',
               controller:'LoginController'
           })
-          .when('/singUp',{
-              templateUrl:'singup.html',
+          .when('/signUp',{
+              templateUrl:'./views/signup.html',
               controller:'SignUpController'
           })
           .when('profile/user/:id',{
-              templateUrl:'profile-user.html',
+              templateUrl:'./views/profile-user.html',
               controller:'ProfileUserController'
           })
           .when('profile/company/:id',{
-              templateUrl:'profile-company.html',
+              templateUrl:'./views/profile-company.html',
               controller:'ProfileCompanyController'
           })
           .when('job/add',{
-              templateUrl:'job-add.html',
+              templateUrl:'./views/job-add.html',
               controller:'JobAddController'
           })
           .when('job/:id',{
-              templateUrl:'job.html',
+              templateUrl:'./views/job.html',
               controller:'JobController'
           })
           .otherwise({
