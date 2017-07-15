@@ -1,6 +1,6 @@
-angular.module('app.service.signup', [])
+angular.module('app.service.job', [])
 
-    .factory('SignUpService',['$http','domain', function ($http,domain) {
+    .factory('JobService',['$http','domain', function ($http,domain) {
 
         var service = {};
         service.getJobs=function (page) {

@@ -18,8 +18,9 @@ angular.module('app', [
   'app.controller.signup',
 
   //services
-  'app.services.login',
-  'app.services.signup'
+  'app.service.login',
+  'app.service.signup',
+  'app.service.job'
   // Dependicies
 
 
