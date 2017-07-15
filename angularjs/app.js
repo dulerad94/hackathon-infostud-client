@@ -5,11 +5,17 @@ angular.module('app', [
 
 
   //route
-  'app.route'
+  'app.route',
 
 
   //controllers
-
+  'app.controller.home',
+  'app.controller.jobadd',
+  'app.controller.job',
+  'app.controller.login',
+  'app.controller.profilecompany',
+  'app.controller.profileuser',
+  'app.controller.signup'
 
   //services
 
