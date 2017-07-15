@@ -5,17 +5,17 @@ angular.module('app.service.login', [])
         var service = {};
         service.loginUser=function (username,password) {
             var data={
-                username:username,
+                email:username,
                 password:password
             };
-            return $http.post(domain+'/loginUser',data);
+            return $http.post(domain+'loginUser',data);
         };
         service.loginCompany=function (username,password) {
             var data={
-                username:username,
+                email:username,
                 password:password
             };
-            return $http.post(domain+'',data);
+            return $http.post(domain+'loginCompany',data);
         };
         return service;
     }]);
