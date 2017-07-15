@@ -6,7 +6,6 @@ angular.module('app.controller.home', [])
             // $scope.search=($window.localStorage.jobSearch===null || $window.localStorage.jobSearch==="undefined")?"":$window.localStorage.jobSearch;
             // $scope.first=$scope.page>2;
             // $scope.previous=$scope.page>1;
-            //
             // if($scope.search==="") {
             //     JobService.getJobs($scope.page).then(function (res) {
             //         if(res.data.success==="false") return;
