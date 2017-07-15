@@ -15,11 +15,12 @@ angular.module('app', [
   'app.controller.login',
   'app.controller.profilecompany',
   'app.controller.profileuser',
-  'app.controller.signup'
+  'app.controller.signup',
 
   //services
-
+  'app.services.login',
+  'app.services.signup'
   // Dependicies
 
 
-]).constant('domain', 'URL OTASEV');
+]).constant('domain', 'http://192.168.30.139:8000');

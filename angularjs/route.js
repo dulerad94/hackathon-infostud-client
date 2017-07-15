@@ -5,7 +5,7 @@ angular.module('app.route', [])
               templateUrl:'/views/home.html',
               controller:'HomeController'
           })
-          .when('/login',{
+          .when('/login/:type',{
               templateUrl:'login.html',
               controller:'LoginController'
           })
