@@ -30,6 +30,6 @@ angular.module('app.route', [])
               controller:'JobController'
           })
           .otherwise({
-              redirectTo: '/login'
+              redirectTo: '/home/1'
           });
   }]);
