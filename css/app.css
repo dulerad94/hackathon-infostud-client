@@ -6619,6 +6619,9 @@ img {
 p {
   line-height: 145%; }
 
+section {
+  padding: 80px 0; }
+
 /*
 *Signup
 */
