@@ -62,4 +62,11 @@ angular.module('app.controller.home', [])
             //     }
             //     $window.location="#!home/"+sufix;
             // };
+
+            JobService.getJobs().then(function (res) {
+               if(res.data.success=="false"){
+                       return;
+               }
+               $scope.jobs=res.data.jobs;
+            });
         }]);
