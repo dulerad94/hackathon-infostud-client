@@ -13,22 +13,23 @@ angular.module('app.route', [])
               templateUrl:'./views/signup.html',
               controller:'SignUpController'
           })
-          .when('profile/user/:id',{
+          .when('/profile/user/:id',{
               templateUrl:'./views/profile-user.html',
               controller:'ProfileUserController'
           })
-          .when('profile/company/:id',{
+          .when('/profile/company/:id',{
               templateUrl:'./views/profile-company.html',
               controller:'ProfileCompanyController'
           })
-          .when('job/add',{
-              templateUrl:'./views/job-add.html',
-              controller:'JobAddController'
-          })
-          .when('job/:id',{
+          .when('/job/:id',{
               templateUrl:'./views/job.html',
               controller:'JobController'
           })
+          .when('/job/add',{
+              templateUrl:'./views/job-add.html',
+              controller:'JobAddController'
+          })
+
           .otherwise({
               redirectTo: '/home/1'
           });
