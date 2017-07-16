@@ -27,11 +27,11 @@ angular.module('app.route', [])
           })
           .when('/job/add-2',{
               templateUrl:'./views/job-add-2.html',
-              controller:'JobAddController'
+              controller:'JobAdd2Controller'
           })
           .when('/job/add-3',{
               templateUrl:'./views/job-add-3.html',
-              controller:'JobAddController'
+              controller:'JobAdd3Controller'
           })
           .when('/job/:id',{
               templateUrl:'./views/job.html',

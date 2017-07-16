@@ -68,11 +68,11 @@ angular.module('app.controller.jobadd', [])
             };
 
             $scope.submit=function () {
-                scope.tags[$scope.tags.length-1].name=name;
-                $scope.tags[$scope.tags.length-1].show=false;
-                if($scope.tags[$scope.tags.length-1].name==="") $scope.tags.pop();
-                $scope.job.tags=$scope.tags;
-                $window.localStorage.tags=$scope.job.tags[0];
+                // $scope.tags[$scope.tags.length-1].name=$scope.job.profession;
+                // $scope.tags[$scope.tags.length-1].show=false;
+                // if($scope.tags[$scope.tags.length-1].name==="") $scope.tags.pop();
+                // $scope.job.tag=$scope.tags;
+                $window.localStorage.tag=$scope.job.profession;
                 $window.localStorage.sex=$scope.job.sex;
                 $window.localStorage.age=$scope.job.age;
                 $window.localStorage.pay=$scope.job.pay;

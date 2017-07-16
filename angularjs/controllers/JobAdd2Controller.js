@@ -23,7 +23,14 @@ angular.module('app.controller.jobadd2', [])
 
             $scope.submit=function () {
                 if($scope.requirements[$scope.requirements.length-1].name==="") $scope.requirements.pop();
-                $scope.job.requirements=$scope.requirements;
+                var offers="";
+                for(var i=0;i<$scope.requirements.length-1;i++){
+                    offers+=$scope.requirements[i].name+";";
+                }
+                if($scope.requirements.length>0){
+                    offers+=$scope.requirements[$scope.requirements.length-1].name;
+                }
+                $scope.requirements=offers;
                 $window.localStorage.requirements=$scope.requirements;
                 $window.location="#!/job/add-3";
             };
