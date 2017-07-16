@@ -5,20 +5,20 @@
     <div class="row">
 
       <div class="input-field col s4 offset-s4">
-        <input ng-model="user.name" id="profession" type="text" class="validate" required placeholder="Zanimanje">
+        <input ng-model="job.profession" id="profession" type="text" class="validate" required placeholder="Zanimanje">
       </div>
 
        <div class="input-field col s4 offset-s4">
-      <select ng-model="user.level" id="#select" class="browser-default select-material">
+      <select ng-model="job.sex" class="browser-default select-material">
         <option value="" disabled selected>Sex</option>
         <option value="1">Male</option>
         <option value="2">Famale</option>
         <option value="3">No.</option>
       </select>
-
+       </div>
 
        <div class="input-field col s4 offset-s4">
-      <select ng-model="user.level" id="#select" class="browser-default select-material">
+      <select ng-model="job.age" id="#select" class="browser-default select-material">
         <option value="" disabled selected>Level</option>
         <option value="Manje od godinu dana">Manje od godinu dana</option>
         <option value="Od 1-3">Od 1-3</option>
@@ -26,9 +26,21 @@
         <option value="preko 5 godina">preko 5 godina</option>
         <option value="preko 3 godina">preko 3 godina</option>
       </select>
+       </div>
+
+         <div class="col s4 offset-s4" ng-repeat="r in requirements">
+           <input type="text" ng-model="r.text" class="chip col s9 ">
+           <button class="btn s3" ng-show="r.show" ng-click="addRequirements(r.name)">+</button>
+           <button class="btn s3" ng-hide="r.show" ng-click="deleteRequirements(r.name)">-</button>
+         </div>
+
+         <div class="col s4 offset-s4" ng-repeat="o in offers">
+           <input type="text" ng-model="o.name" class="chip col s9 ">
+           <button class="btn s3" ng-show="o.show" ng-click="addOffer(o.name)">+</button>
+           <button class="btn s3" ng-hide="o.show" ng-click="deleteOffer(o.name)">-</button>
+         </div>
 
 
-    </div>
 
     </div>
 
