@@ -17,6 +17,10 @@ angular.module('app.service.job', [])
             };
             return $http.post(domain+'job/new',data);
         };
+        service.getJob=function (id) {
+
+            return $http.get(domain+"job/"+id);
+        };
         service.getAllTags=function () {
             var data={
               name:""
