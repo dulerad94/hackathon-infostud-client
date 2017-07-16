@@ -11,6 +11,7 @@ angular.module('app.controller.login', [])
                             return;
                         }
                         $window.sessionStorage.clear();
+                        $window.sessionStorage.type="user";
                         $window.sessionStorage.userID=res.data.user.user_id;
                         $window.location="#!/home/1";
                     });
@@ -22,6 +23,7 @@ angular.module('app.controller.login', [])
                             return;
                         }
                         $window.sessionStorage.clear();
+                        $window.sessionStorage.type="company";
                         $window.sessionStorage.companyID=res.data.user.company_id;
                         $window.location="#!/home/1";
                     });

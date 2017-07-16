@@ -37,5 +37,12 @@ angular.module('app.service.job', [])
 
             return $http.get(domain+"job/bestUsers/"+jobID);
         };
+        service.contactUser=function(userID,jobID){
+          var data={
+              'user_id':userID,
+              'ad_id':jobID
+          };
+            return $http.post(domain+"sendJobOffer",data);
+        };
         return service;
     }]);
