@@ -25,6 +25,14 @@ angular.module('app.route', [])
               templateUrl:'./views/job-add.html',
               controller:'JobAddController'
           })
+          .when('/job/add-2',{
+              templateUrl:'./views/job-add-2.html',
+              controller:'JobAddController'
+          })
+          .when('/job/add-3',{
+              templateUrl:'./views/job-add-3.html',
+              controller:'JobAddController'
+          })
           .when('/job/:id',{
               templateUrl:'./views/job.html',
               controller:'JobController'

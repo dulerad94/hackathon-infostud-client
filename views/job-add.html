@@ -40,23 +40,6 @@
       <div class="input-field col s4 offset-s4">
         <input ng-model="job.pay" id="pay" type="text" class="validate" required placeholder="Plata">
       </div>
-      <div class="input-field col s4 offset-s4">
-          <h3>Zahtevi</h3>
-        </div>
-         <div class="col s4 offset-s4" ng-repeat="r in requirements">
-           <input type="text" ng-model="r.name" class="chip col s9 ">
-           <button type="button" class="btn s3" ng-show="r.show" ng-click="addRequirements(r.name)">+</button>
-           <button type="button" class="btn s3" ng-hide="r.show" ng-click="deleteRequirements(r.name)">-</button>
-         </div>
-      <div class="input-field col s4 offset-s4">
-          <h3>Sta mi nudimo</h3>
-      </div>
-         <div class="col s4 offset-s4" ng-repeat="o in offers">
-           <input type="text" ng-model="o.name" class="chip col s9 ">
-           <button type="button" class="btn s3" ng-show="o.show" ng-click="addOffer(o.name)">+</button>
-           <button type="button" class="btn s3" ng-hide="o.show" ng-click="deleteOffer(o.name)">-</button>
-         </div>
-
 
       <div class="btn-send col s4 offset-s4">
         <button type="submit" class="waves-effect waves-light btn ">Submit</button>

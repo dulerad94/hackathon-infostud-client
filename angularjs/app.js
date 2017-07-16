@@ -17,6 +17,8 @@ angular.module('app', [
   'app.controller.profilecompany',
   'app.controller.profileuser',
   'app.controller.signup',
+  'app.controller.jobadd2',
+  'app.controller.jobadd3',
 
 
   //services

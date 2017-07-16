@@ -2,6 +2,7 @@ angular.module('app.controller.jobadd', [])
 
     .controller('JobAddController', ['$scope','$location','$window','JobService',
         function ($scope,$location,$window,JobService) {
+            $window.localStorage.clear();
             JobService.getAllTags().then(function (res) {
                 $scope.positions=res.data.tags;
             });
@@ -65,57 +66,17 @@ angular.module('app.controller.jobadd', [])
                 }
 
             };
-            $scope.requirements=[{'name':'','show':true}];
-
-            $scope.addRequirements=function(name){
-                $scope.requirements[$scope.requirements.length-1].name=name;
-                $scope.requirements[$scope.requirements.length-1].show=false;
-                $scope.requirements.push({"name":"",'show':true});
-
-            };
-            $scope.deleteRequirements=function(name){
-                for(var i=0;i<$scope.requirements.length;i++){
-                    if($scope.requirements[i].name===name){
-                        $scope.requirements.splice(i,1);
-                        return;
-                    }
-                }
-
-            };
-            $scope.offers=[{'name':'','show':true}];
-
-            $scope.addOffer=function(name){
-                $scope.offers[$scope.offers.length-1].name=name;
-                $scope.offers[$scope.offers.length-1].show=false;
-                $scope.offers.push({"name":"",'show':true});
-
-            };
-            $scope.deleteOffer=function(name){
-                for(var i=0;i<$scope.offers.length;i++){
-                    if($scope.offers[i].name===name){
-                        $scope.offers.splice(i,1);
-                        return;
-                    }
-                }
-
-            };
 
             $scope.submit=function () {
-                if($scope.requirements[$scope.requirements.length-1].name==="") $scope.requirements.pop();
-                if($scope.offers[$scope.offers.length-1].name==="") $scope.offers.pop();
+                scope.tags[$scope.tags.length-1].name=name;
+                $scope.tags[$scope.tags.length-1].show=false;
                 if($scope.tags[$scope.tags.length-1].name==="") $scope.tags.pop();
-                $scope.job.requirements=$scope.requirements;
-                var offers="";
-                for(var i=0;i<$scope.offers.length-1;i++){
-                    offers+=$scope.offers[i].name+";";
-                }
-                if($scope.offers.length>0){
-                        offers+=$scope.offers[$scope.offers.length-1].name;
-                }
-                $scope.job.what_we_offer=offers;
-                JobService.postJob($scope.job).then(function (res) {
-
-                });
+                $scope.job.tags=$scope.tags;
+                $window.localStorage.tags=$scope.job.tags[0];
+                $window.localStorage.sex=$scope.job.sex;
+                $window.localStorage.age=$scope.job.age;
+                $window.localStorage.pay=$scope.job.pay;
+                $window.location="#!/job/add-2";
             };
 
         }]);
