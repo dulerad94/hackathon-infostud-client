@@ -3,11 +3,11 @@ angular.module('app.controller.jobadd3', [])
     .controller('JobAdd3Controller', ['$scope','$location','$window','JobService',
         function ($scope,$location,$window,JobService) {
             $scope.job={
-              "age":$window.localStorage.age,
-              "pay":$window.localStorage.pay,
-              "sex":$window.localStorage.sex,
-              "tag":$window.localStorage.tag,
-              "requirements":$window.localStorage.requirements
+              "age":""+$window.localStorage.age,
+              "pay":""+$window.localStorage.pay,
+              "sex":""+$window.localStorage.sex,
+              "tag":""+$window.localStorage.tag,
+              "requirements":""+$window.localStorage.requirements
             };
             $scope.offers=[{'name':'','show':true}];
 
@@ -33,16 +33,19 @@ angular.module('app.controller.jobadd3', [])
 
 
                 var offers="";
-                for(var i=0;i<$scope.offers.length-1;i++){
-                    offers+=$scope.offers[i].name+";";
+                if($scope.offers!="undefined"){
+                    for(var i=0;i<$scope.offers.length-1;i++){
+                        offers+=$scope.offers[i].name+";";
+                    }
+                    if($scope.offers.length>0){
+                        offers+=$scope.offers[$scope.offers.length-1].name;
+                    }
+                    $scope.job.what_we_offer=""+offers;
                 }
-                if($scope.offers.length>0){
-                    offers+=$scope.offers[$scope.offers.length-1].name;
-                }
-                $scope.job.what_we_offer=offers;
-                $scope.job.companyID=$window.$sessionStorage.companyID;
-                JobService.postJob($scope.job).then(function (res) {
 
+                $scope.job.companyID=""+$window.sessionStorage.companyID;
+                JobService.postJob($scope.job).then(function (res) {
+                    $window.location="#!/home/1";
                 });
             };
 
