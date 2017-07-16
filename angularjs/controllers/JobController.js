@@ -11,6 +11,8 @@ angular.module('app.controller.job', [])
                     $scope.job.company.images=res.data.images;
                 });
             });
-
+            JobService.getBestUsersForAd($scope.jobID).then(function (res) {
+                $scope.users=res.data.users;
+            });
 
         }]);

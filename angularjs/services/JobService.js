@@ -33,5 +33,9 @@ angular.module('app.service.job', [])
             };
           return $http.post(domain+"tag/filter",data);
         };
+        service.getBestUsersForAd=function (jobID) {
+
+            return $http.get(domain+"job/bestUsers/"+jobID);
+        };
         return service;
     }]);

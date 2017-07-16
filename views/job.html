@@ -38,38 +38,17 @@
       <div class="container">
         <h2 class="section-title">Savršeni kandidati</h2>
         <div class="row">
-        <div class="col s4">
+        <div class="col s4" ng-repeat="u in users">
           <div class="card">
             <div class="card-content white-text">
-              <span class="card-title">Slavko Radovanović</span>
-              <p>I am a very simple card. I am good at containing small bits of information.
-              I am convenient because I require little markup to use effectively.</p>
-              <a href="#" class="btn btn-primary btn-contact">Kontaktiraj</a>
+              <span class="card-title">{{u.name}}</span>
+              <p>{{u.about_me}}</p>
+              <a ng-click="contact()" class="btn btn-primary btn-contact">Kontaktiraj</a>
             </div>
           </div>
         </div>
         
-        <div class="col s4">
-          <div class="card">
-            <div class="card-content white-text">
-              <span class="card-title">Jelica Sretenović</span>
-              <p>I am a very simple card. I am good at containing small bits of information.
-              I am convenient because I require little markup to use effectively.</p>
-              <a href="#" class="btn btn-primary btn-contact">Kontaktiraj</a>
-            </div>
-          </div>
-        </div>
 
-        <div class="col s4">
-          <div class="card">
-            <div class="card-content white-text">
-              <span class="card-title">Goran Buđelan</span>
-              <p>I am a very simple card. I am good at containing small bits of information.
-              I am convenient because I require little markup to use effectively.</p>
-              <a href="#" class="btn btn-primary btn-contact">Kontaktiraj</a>
-            </div>
-          </div>
-        </div>
 
       </div>
       </div>
