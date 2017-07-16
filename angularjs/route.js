@@ -21,13 +21,13 @@ angular.module('app.route', [])
               templateUrl:'./views/profile-company.html',
               controller:'ProfileCompanyController'
           })
-          .when('/job/:id',{
-              templateUrl:'./views/job.html',
-              controller:'JobController'
-          })
           .when('/job/add',{
               templateUrl:'./views/job-add.html',
               controller:'JobAddController'
+          })
+          .when('/job/:id',{
+              templateUrl:'./views/job.html',
+              controller:'JobController'
           })
 
           .otherwise({
