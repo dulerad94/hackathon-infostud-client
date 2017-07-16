@@ -6674,12 +6674,20 @@ select {
 .active {
   color: #fff !important; }
 
+.highlight {
+  font-weight: 800; }
+
 .job-body {
   padding-top: 50px;
-  padding-bottom: 50px; }
+  padding-bottom: 50px;
+  margin-left: 20%;
+  font-size: 16px; }
 
 .job-body li {
   margin-bottom: 15px; }
+
+.job-body-list {
+  list-style-type: circle; }
 
 .btn-send {
   margin-left: 33.333%; }
