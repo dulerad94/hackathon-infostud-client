@@ -11,5 +11,11 @@ angular.module('app.service.job', [])
 
             return $http.get(domain+''+page+filter);
         };
+        service.postJob=function (job) {
+            var data={
+                job:job
+            };
+            return $http.post(domain+'job',data);
+        };
         return service;
     }]);

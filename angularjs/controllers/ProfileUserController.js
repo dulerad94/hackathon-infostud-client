@@ -7,7 +7,8 @@ angular
     "$location",
     "$window",
     '$routeParams',
-    function($scope, $location, $window,$routeParams) {
+    'ProfileService',
+    function($scope, $location, $window,$routeParams,ProfileService) {
         $scope.chips=[{'tag':'','show':true}];
 
         $scope.addChip=function(tag){
@@ -23,7 +24,13 @@ angular
                     return;
                 }
             }
-            
+
+        };
+        $scope.submit=function () {
+            $scope.user.skills=$scope.chips;
+            ProfileService.submit($scope.user).then(function (res) {
+
+            });
         };
     }
   ]);

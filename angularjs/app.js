@@ -22,7 +22,8 @@ angular.module('app', [
   //services
   'app.service.login',
   'app.service.signup',
-  'app.service.job'
+  'app.service.job',
+  'app.service.profile'
   // Dependicies
 
 
