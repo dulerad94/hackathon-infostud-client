@@ -13,7 +13,13 @@ angular.module('app.service.job', [])
         };
         service.postJob=function (job) {
             var data={
-                job:job
+                age:job.age,
+                pay:job.pay,
+                sex:job.sex,
+                tag:job.tag,
+                requirements:job.requirements,
+                what_we_offer:job.what_we_offer,
+                companyID:job.companyID
             };
             return $http.post(domain+'job/new',data);
         };
