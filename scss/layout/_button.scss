@@ -5,3 +5,10 @@
     background-color:$color-primary;
   }
 }
+.btn-signup,
+.btn-login {
+  margin-left:25%;
+}
+.btn:focus, .btn-large:focus, .btn-floating:focus {
+  background-color:$color-primary;
+}
