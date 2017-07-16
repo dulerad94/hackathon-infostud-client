@@ -6668,6 +6668,12 @@ select {
 .title-basic-info {
   margin-top: 50px; }
 
+.breadcrumb:last-child {
+  color: rgba(255, 255, 255, 0.7); }
+
+.active {
+  color: #fff !important; }
+
 .job-body {
   padding-top: 50px;
   padding-bottom: 50px; }
