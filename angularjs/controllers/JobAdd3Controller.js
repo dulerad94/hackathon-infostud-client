@@ -40,6 +40,7 @@ angular.module('app.controller.jobadd3', [])
                     offers+=$scope.offers[$scope.offers.length-1].name;
                 }
                 $scope.job.what_we_offer=offers;
+                $scope.job.companyID=$window.$sessionStorage.companyID;
                 JobService.postJob($scope.job).then(function (res) {
 
                 });
