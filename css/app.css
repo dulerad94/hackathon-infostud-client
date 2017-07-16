@@ -6691,6 +6691,11 @@ select {
 .btn:focus, .btn-large:focus, .btn-floating:focus {
   background-color: #3F51B5; }
 
+.btn-add,
+.btn-del {
+  margin-top: 10px;
+  padding: 0 15px; }
+
 nav {
   background-color: #3F51B5; }
 
