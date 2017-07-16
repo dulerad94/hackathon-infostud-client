@@ -5,13 +5,13 @@
 
       <div class="col s9">
         <p>Idu kartice</p>
-        <div class="row" ng-repeat="j in jobs">
-        <div class="col s12 m6">
+        <div class="row" >
+        <div class="col s12 m6" ng-repeat="j in jobs">
           <div class="card blue-light">
             <div class="card-content white-text">
               <span class="card-title">{{j.title}}</span>
               <img ng-src="{{j.company[0].logo_url}}">
-              <p>{{j.company[0].name}} trazi coveka za poziciju {{j.position}}</p>
+              <p>{{j.company[0].name}} trazi coveka za poziciju {{j.tagsString}}</p>
             </div>
             <div class="card-action">
               <a href="#!/job/{{j.ad_id}}">Pogledaj vise</a>

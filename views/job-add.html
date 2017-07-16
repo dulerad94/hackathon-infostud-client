@@ -6,7 +6,12 @@
     <div class="row">
 
       <div class="input-field col s4 offset-s4">
-        <input ng-model="job.profession" id="profession" type="text" class="col s12 validate" required placeholder="Zanimanje">
+        <div class="col s12" ng-repeat="t in tags">
+          <input type="text" class="profession col s9 validate" required placeholder="Zanimanje">
+          <button type="button" class="btn s3" ng-show="t.show" ng-click="addTag(t.name)">+</button>
+          <button type="button" class="btn s3" ng-hide="t.show" ng-click="deleteTag(t.name)">-</button>
+        </div>
+
         <ul id="profession-list" ng-model="professions">
 
         </ul>

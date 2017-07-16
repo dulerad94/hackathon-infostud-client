@@ -68,5 +68,12 @@ angular.module('app.controller.home', [])
                        return;
                }
                $scope.jobs=res.data.jobs;
+               for(var i=0;i<$scope.jobs.length;i++){
+                   $scope.jobs[i].tagsString="";
+                   for(var j=0;j<$scope.jobs[i].tags.length;j++){
+                       scope.jobs[i].tagsString+=$scope.jobs[i].tags[j].name;
+                   }
+                   $scope.jobs[i].tagsString.substring(0,$scope.jobs[i].tagsString.length-1);
+               }
             });
         }]);

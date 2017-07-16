@@ -9,5 +9,8 @@ angular.module('app.service.profile', [])
             };
             return $http.post(domain+'user',data);
         };
+        service.getCompanyPictures=function(id){
+            return $http.get(domain+"company/images/"+id);
+        };
         return service;
     }]);
