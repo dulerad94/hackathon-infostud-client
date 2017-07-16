@@ -2,6 +2,8 @@ angular.module('app', [
   'ngRoute',
   'ngStorage',
   'ngSanitize',
+  'ngMaterial',
+  'ui.materialize',
 
   //route
   'app.route',
@@ -15,6 +17,7 @@ angular.module('app', [
   'app.controller.profilecompany',
   'app.controller.profileuser',
   'app.controller.signup',
+
 
   //services
   'app.service.login',

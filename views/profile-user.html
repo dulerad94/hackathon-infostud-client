@@ -5,59 +5,50 @@
       <form ng-submit="submit()">
         <h3 class="col s4 offset-s4">Basic info</h3>
         <div class="input-field col s4 offset-s4">
-          <input ng-model="user.name" id="name" type="email" class="validate" required>
-          <label for="name">Name</label>
+          <input ng-model="user.name" id="name" type="email" class="validate" required placeholder="Name">
         </div>
 
         <div class="input-field col s4 offset-s4">
-          <input ng-model="user.email" id="email" type="email" class="validate" required>
-          <label for="email">Email</label>
+          <input ng-model="user.email" id="email" type="email" class="validate" required placeholder="email">
         </div>
 
         <div class="input-field col s4 offset-s4">
-          <input ng-model="user.password" id="password" type="password" class="validate" required>
-          <label for="password">Password</label>
+          <input ng-model="user.password" id="password" type="password" class="validate" required placeholder="password">
         </div>
 
         <div class="input-field col s4 offset-s4">
-          <input ng-model="user.address" id="address" type="text" class="validate">
-          <label for="adress">Address</label>
+          <input ng-model="user.address" id="address" type="text" class="validate" placeholder="Address">
         </div>
 
 
         <div class="input-field col s4 offset-s4">
-          <input ng-model="user.position" id="logo" type="text" class="validate">
-          <label for="logo">Position</label>
+          <input ng-model="user.position" id="logo" type="text" class="validate" placeholder="Position">
         </div>
 
         <div class="input-field col s4 offset-s4">
-          <textarea ng-model="user.desc" id="textarea1" class="materialize-textarea"></textarea>
-          <label for="textarea1">Desc</label>
+          <textarea ng-model="user.desc"  class="materialize-textarea" placeholder="Description"></textarea>
         </div>
 
         <div class="input-field col s4 offset-s4">
-          <textarea ng-model="user.contact" id="textarea1" class="materialize-textarea"></textarea>
-          <label for="textarea1">Contact</label>
+          <textarea ng-model="user.contact"  placeholder="Contact" class="materialize-textarea"></textarea>
         </div>
         <h3 class="col s4 offset-s4">Education</h3>
         <div class="input-field col s4 offset-s4">
-          <input ng-model="user.school" id="school" type="email" class="validate" required>
-          <label for="school">School</label>
+          <input ng-model="user.school" id="school" type="email" class="validate" required placeholder="School">
         </div>
 
 
         <div class="input-field col s4 offset-s4">
-          <inpu ng-model="user.diploma" id="diploma" type="text" class="validate">
-          <label for="diploma">Diploma</label>
+          <input ng-model="user.diploma" id="diploma" type="text" class="validate" placeholder="Diploma">
         </div>
-
 
         <h3 class="col s4 offset-s4">Skills</h3>
 
-        <div class="skills col s4 offset-s4">
-          <md-chips ng-model="chips" placeholder="Add an item">
-          </md-chips>
-        </div>
+          <div class="col s4 offset-s4" ng-repeat="chip in chips">
+            <input type="text" ng-model="chip.tag" class="chip col s9 ">
+              <button class="btn s3" ng-show="chip.show" ng-click="addChip(chip.tag)">+</button>
+              <button class="btn s3" ng-hide="chip.show" ng-click="deleteChip(chip.tag)">-</button>
+          </div>
 
     <div class="input-field col s4 offset-s4">
       <select ng-model="user.level" id="#select" class="browser-default select-material">
