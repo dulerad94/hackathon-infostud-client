@@ -1,7 +1,15 @@
 <div ng-include="'includes/header.html'"></div>
 <section class="jobadd">
     <div class="container">
-        <h2 class="section-title">Job Add</h2>
+        <div class="nav-wrapper">
+        <div class="container">
+          <div class="col s6 offset-s3">
+            <a href="#!" class="breadcrumb">Korak 1</a>
+            <a href="#!" class="breadcrumb">Korak 2</a>
+            <a href="#!" class="breadcrumb">Korak 3</a>
+          </div>
+        </div>
+      </div>
         <form ng-submit="submit()">
             <div class="row">
 
@@ -10,13 +18,13 @@
                 </div>
                 <div class="col s4 offset-s4" ng-repeat="o in offers">
                     <input type="text" ng-model="o.name" class="chip col s9 ">
-                    <button type="button" class="btn s3" ng-show="o.show" ng-click="addOffer(o.name)">+</button>
-                    <button type="button" class="btn s3" ng-hide="o.show" ng-click="deleteOffer(o.name)">-</button>
+                    <button type="button" class="btn btn-add s3" ng-show="o.show" ng-click="addOffer(o.name)">+</button>
+                    <button type="button" class="btn btn-del s3" ng-hide="o.show" ng-click="deleteOffer(o.name)">-</button>
                 </div>
 
 
                 <div class="btn-send col s4 offset-s4">
-                    <button type="submit" class="waves-effect waves-light btn ">Submit</button>
+                    <button type="submit" class="waves-effect waves-light btn ">Završi</button>
                 </div>
             </div>
         </form>

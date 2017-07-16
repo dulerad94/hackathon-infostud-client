@@ -1,47 +1,58 @@
 <div ng-include="'includes/header.html'"></div>
 <section class="jobadd">
   <div class="container">
-    <h2 class="section-title">Osnovne informacije</h2>
+    <nav id="bk-1">
+      <div class="nav-wrapper">
+        <div class="container">
+          <div class="col s6 offset-s3">
+            <a href="#!" class="breadcrumb">Korak 1</a>
+            <a href="#!" class="breadcrumb">Korak 2</a>
+            <a href="#!" class="breadcrumb">Korak 3</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <h2 class="section-title title-basic-info">Osnovne informacije</h2>
     <form ng-submit="submit()">
-    <div class="row">
+      <div class="row">
 
-      <div class="input-field col s4 offset-s4">
-        <div class="col s12" ng-repeat="t in tags">
-          <input type="text" ng-model="job.profession" class="profession col s9 validate" required placeholder="Zanimanje">
+        <div class="input-field col s4 offset-s4">
+          <div ng-repeat="t in tags">
+            <input type="text" ng-model="job.profession" class="profession  validate" required placeholder="Zanimanje">
+          </div>
+
+          <ul id="profession-list" ng-model="professions">
+
+          </ul>
         </div>
 
-        <ul id="profession-list" ng-model="professions">
-
-        </ul>
-      </div>
-
-       <div class="input-field col s4 offset-s4">
-      <select ng-model="job.sex" class="browser-default select-material">
+        <div class="input-field col s4 offset-s4">
+          <select ng-model="job.sex" class="browser-default select-material">
         <option value="" disabled selected>Pol</option>
         <option value="1">Muški</option>
         <option value="2">Ženski</option>
         <option value="3">Nije bitan</option>
       </select>
-       </div>
+        </div>
 
-       <div class="input-field col s4 offset-s4">
-      <select ng-model="job.age" id="#select" class="browser-default select-material">
+        <div class="input-field col s4 offset-s4">
+          <select ng-model="job.age" id="#select" class="browser-default select-material">
         <option value="" disabled selected>Radno iskustvo</option>
         <option value="0">Manje od godinu dana</option>
         <option value="1">Od 1-3</option>
         <option value="3">3-5 godina</option>
         <option value="6">preko 5 godina</option>
       </select>
-       </div>
+        </div>
 
-      <div class="input-field col s4 offset-s4">
-        <input ng-model="job.pay" id="pay" type="text" class="validate" required placeholder="Plata">
-      </div>
+        <div class="input-field col s4 offset-s4">
+          <input ng-model="job.pay" id="pay" type="text" class="validate" required placeholder="Plata">
+        </div>
 
-      <div class="btn-send col s4 offset-s4">
-        <button type="submit" class="waves-effect waves-light btn ">Submit</button>
+        <div class="btn-send col s4 offset-s4">
+          <button type="submit" class="waves-effect waves-light btn ">Dalje</button>
+        </div>
       </div>
-    </div>
     </form>
   </div>
 </section>
