@@ -1,79 +1,83 @@
-<div ng-include="'includes/header.html'">
-</div>
+<div ng-include="'includes/header.html'"></div>
 <section class="profile-user">
-    <div class="container">
-      <div class="row">
-        <form action="">
-          <h3 class="col s4 offset-s4">Basic info</h3>
-          <div class="input-field col s4 offset-s4">
-            <input id="name" type="email" class="validate" required>
-            <label for="name">Name</label>
-          </div>
+  <div class="container">
+    <div class="row">
+      <form ng-submit="submit()">
+        <h3 class="col s4 offset-s4">Basic info</h3>
+        <div class="input-field col s4 offset-s4">
+          <input ng-model="user.name" id="name" type="email" class="validate" required>
+          <label for="name">Name</label>
+        </div>
 
-          <div class="input-field col s4 offset-s4">
-            <input id="email" type="email" class="validate" required>
-            <label for="email">Email</label>
-          </div>
+        <div class="input-field col s4 offset-s4">
+          <input ng-model="user.email" id="email" type="email" class="validate" required>
+          <label for="email">Email</label>
+        </div>
 
-          <div class="input-field col s4 offset-s4">
-            <input id="password" type="password" class="validate" required>
-            <label for="password">Password</label>
-          </div>
+        <div class="input-field col s4 offset-s4">
+          <input ng-model="user.password" id="password" type="password" class="validate" required>
+          <label for="password">Password</label>
+        </div>
 
-          <div class="input-field col s4 offset-s4">
-            <input id="adress" type="text" class="validate">
-            <label for="adress">Adress</label>
-          </div>
-
-          <div class="input-field col s4 offset-s4">
-            <input id="logo" type="text" class="validate">
-            <label for="logo">Position</label>
-          </div>
-
-          <div class="input-field col s4 offset-s4">
-            <textarea id="textarea1" class="materialize-textarea"></textarea>
-            <label for="textarea1">Desc</label>
-          </div>
-
-          <div class="input-field col s4 offset-s4">
-            <textarea id="textarea1" class="materialize-textarea"></textarea>
-            <label for="textarea1">Contact</label>
-          </div>
-          <h3 class="col s4 offset-s4">Education</h3>
-          <div class="input-field col s4 offset-s4">
-            <input id="school" type="email" class="validate" required>
-            <label for="school">School</label>
-          </div>
-
-          <div class="input-field col s4 offset-s4">
-            <input id="diploma" type="text" class="validate">
-            <label for="diploma">Diploma</label>
-          </div>
-          <h3 class="col s4 offset-s4">Skills</h3>
-          
-          <div class="skills col s4 offset-s4" ng-repeat="chip in chips">
-            <input type="text" class="chip validate ng-{{chip.show}}"  ng-model="chip.chip"><button class="ng-{{chip.hide}}" ng-click="deleteChip(chipCount)">x</button>
-          </div>
-          <div class="input-field col s4 offset-s4">
-            <select class="form-input" ng-model="points">
-              <option ng-value="1">1</option>
-              <option ng-value="2">2</option>
-              <option ng-value="3">3</option>
-              <option ng-value="4">4</option>
-              <option ng-value="5">5</option>
-            </select>
-          </div>
-
-
-        </form>
-      </div>
-        <div class="btn-send">
-          <button class="waves-effect waves-light btn ">Submit</button>
+        <div class="input-field col s4 offset-s4">
+          <input ng-model="user.address" id="address" type="text" class="validate">
+          <label for="adress">Address</label>
         </div>
 
 
-      <!--row-->
-    </div>
-    <!--container-->
+        <div class="input-field col s4 offset-s4">
+          <input ng-model="user.position" id="logo" type="text" class="validate">
+          <label for="logo">Position</label>
+        </div>
 
-  </section>
+        <div class="input-field col s4 offset-s4">
+          <textarea ng-model="user.desc" id="textarea1" class="materialize-textarea"></textarea>
+          <label for="textarea1">Desc</label>
+        </div>
+
+        <div class="input-field col s4 offset-s4">
+          <textarea ng-model="user.contact" id="textarea1" class="materialize-textarea"></textarea>
+          <label for="textarea1">Contact</label>
+        </div>
+        <h3 class="col s4 offset-s4">Education</h3>
+        <div class="input-field col s4 offset-s4">
+          <input ng-model="user.school" id="school" type="email" class="validate" required>
+          <label for="school">School</label>
+        </div>
+
+
+        <div class="input-field col s4 offset-s4">
+          <inpu ng-model="user.diploma" id="diploma" type="text" class="validate">
+          <label for="diploma">Diploma</label>
+        </div>
+
+
+        <h3 class="col s4 offset-s4">Skills</h3>
+
+        <div class="skills col s4 offset-s4">
+          <md-chips ng-model="chips" placeholder="Add an item">
+          </md-chips>
+        </div>
+
+    <div class="input-field col s4 offset-s4">
+      <select ng-model="user.level" id="#select" class="browser-default select-material">
+        <option value="" disabled selected>Level</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+      </select>
+
+    </div>
+
+    
+      <div class="btn-send col s4 offset-s4">
+        <button type="submit" class="waves-effect waves-light btn ">Submit</button>
+      </div>
+
+    </form>
+  </div>
+  <!--row-->
+  </div>
+  <!--container-->
+
+</section>
