@@ -6624,7 +6624,7 @@ section {
 
 .section-title {
   text-align: center;
-  margin-bottom: 50px; }
+  margin-bottom: 30px; }
 
 .u-center {
   text-align: center; }
@@ -6683,6 +6683,13 @@ select {
   .btn:hover {
     opacity: 0.8;
     background-color: #3F51B5; }
+
+.btn-signup,
+.btn-login {
+  margin-left: 25%; }
+
+.btn:focus, .btn-large:focus, .btn-floating:focus {
+  background-color: #3F51B5; }
 
 nav {
   background-color: #3F51B5; }
