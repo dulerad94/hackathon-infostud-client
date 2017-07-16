@@ -6709,13 +6709,21 @@ select {
 .btn-login {
   margin-left: 25%; }
 
-.btn:focus, .btn-large:focus, .btn-floating:focus {
+.btn:focus,
+.btn-large:focus,
+.btn-floating:focus {
   background-color: #3F51B5; }
 
 .btn-add,
 .btn-del {
   margin-top: 10px;
   padding: 0 15px; }
+
+.btn-contact {
+  margin-top: 15px;
+  padding: 0px 10px;
+  font-size: 10px;
+  height: 35px; }
 
 nav {
   background-color: #3F51B5; }
