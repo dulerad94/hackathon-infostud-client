@@ -3,20 +3,21 @@
 <section class="job">
   <div class="container">
     <div class="job-head">
-      <h2 class="section-title">Pekar Lekar i Moler i Automehanicar</h2>
+      <h2 class="section-title">{{job.title}}</h2>
     </div>
     <div class="job-body">
-      <p><span class="highlight">Naslov : {{job.title}}</span></p>
+      <!--<p><span class="highlight">Naslov : {{job.title}}</span></p>-->
       <p><span class="highlight">Naziv Kompanije : {{job.company[0].name}}</span></p>
       <p><span class="highlight">Adresa : {{job.company[0].address}}</span></p>
       <p><span class="highlight">Telefon : {{job.company[0].contact}}</span></p>
-      <p><span class="highlight">Opis kompanije {{job.company[0].description}}:</span></p>
+      <p><span class="highlight">Opis kompanije : {{job.company[0].description}}</span></p>
       <p><span class="highlight">Zahtevi :</span></p>
       <ul class="job-body-list">
         <li ng-repeat="r in job.requirements">{{r.text}}</li>
       </ul>
     </div>
-
+    <button class="btn" ng-if="company" ng-click="pdf()">Generisi pdf</button>
+    <a class="btn ng-{{pdfCreated}}" href="http://localhost/hackathon-api/public/bandera.pdf" download="">Preuzmi pdf</a>
     <div class="job-gallery u-center">
       <h2 class="section-title">Pogledajte radno okruženje</h2>
       <div class="row" >

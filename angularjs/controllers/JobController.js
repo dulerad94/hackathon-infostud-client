@@ -20,4 +20,10 @@ angular.module('app.controller.job', [])
 
               });
             };
+            $scope.pdfCreated="hide";
+            $scope.pdf=function () {
+                JobService.pdf($scope.jobID).then(function (res) {
+                    $scope.pdfCreated="show";
+                });
+            }
         }]);

@@ -9,7 +9,7 @@ angular
     '$routeParams',
     'ProfileService',
     function($scope, $location, $window,$routeParams,ProfileService) {
-        $scope.chips=[{'tag':'','show':true}];
+        $scope.chips=['zezanje','opaaa'];
 
         $scope.addChip=function(tag){
             $scope.chips[$scope.chips.length-1].tag=tag;

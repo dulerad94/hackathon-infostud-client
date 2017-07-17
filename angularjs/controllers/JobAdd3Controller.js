@@ -45,7 +45,7 @@ angular.module('app.controller.jobadd3', [])
 
                 $scope.job.companyID=""+$window.sessionStorage.companyID;
                 JobService.postJob($scope.job).then(function (res) {
-                    $window.location="#!/home/1";
+                    $window.location="#!/job/"+res.data.ad;
                 });
             };
 

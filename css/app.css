@@ -6692,8 +6692,7 @@ select {
 .btn-send {
   margin-left: 33.333%; }
 
-.blue-light {
-  background-color: #FFE66D !important; }
+
 
 .card .card-action a:not(.btn):not(.btn-large):not(.btn-large):not(.btn-floating) {
   color: #fff; }
@@ -6758,3 +6757,6 @@ input:not([type]):focus:not([readonly]), input[type=text]:not(.browser-default):
 
 .page-footer {
   background-color: #3F51B5; }
+.btn-home {
+  color:#6c7bcc !important;
+}

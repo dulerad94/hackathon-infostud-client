@@ -44,5 +44,9 @@ angular.module('app.service.job', [])
           };
             return $http.post(domain+"sendJobOffer",data);
         };
+        service.pdf=function(jobID){
+
+            return $http.get(domain+"pdf/"+jobID);
+        };
         return service;
     }]);

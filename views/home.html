@@ -3,10 +3,10 @@
   <div class="container">
     <div class="row">
 
-      <div class="col s9">
+      <div class="col s8 offset-s2">
 
-        <div class="row" >
-        <div class="col s12 m6" ng-repeat="j in jobs">
+        <div class="row" ng-repeat="jl in jobList">
+        <div class="col s6" ng-repeat="j in jl">
           <div class="card blue-light">
             <div class="card-content white-text">
               <span class="card-title">{{j.title}}</span>
@@ -14,18 +14,14 @@
               <p>{{j.company[0].name}} trazi coveka za poziciju {{j.tagsString}}</p>
             </div>
             <div class="card-action">
-              <a href="#!/job/{{j.ad_id}}">Pogledaj vise</a>
+              <a class="btn-home" href="#!/job/{{j.ad_id}}">Pogledaj vise</a>
             </div>
           </div>
         </div>
       </div>
       </div>
 
-      <div class="col s3">
-
-      </div>
 
     </div>
   </div>
 </section>
-<div ng-include="'includes/footer.html'"></div>
